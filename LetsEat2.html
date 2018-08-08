@@ -1,0 +1,62 @@
+<html>
+<html lang="en">
+<link rel= "stylesheet" href="LetsEat.css">
+<script src= "final.js"> </script>
+<header><h1><center> <b>Let's Eat!</b> </header></h1></center>
+<h2> <center><b>You Choose? No, We'll Choose. </b></h2> </center>
+<p><center>
+         <label><b>Tell Us Your State/District:</b></label>
+         <input type = "text"
+                id = "myText"
+                value = "text here" />
+       </p></center>
+<p><center>
+<p><center>
+  <style>
+body {
+    background-image: url("foodbackground.jpg");
+    height: 100%
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+}
+</style>
+</head>
+<body>
+  <div class="dropdown">
+    <select name="price" id="price">
+    <div class="dropdown-content">
+      <option value= "$"> $ </option>
+      <option value= "$$"> $$ </option>
+      <option value= "$$$"> $$$ </option>
+    </div>
+  </div>
+      <p><b>How much are you willing to spend?</b></p>
+
+
+
+
+        </select>
+        <button onClick = "innerHTML = document.getElementById('price').value"> Enter </button>
+
+      <p><b>Specify what kind of food you are in the mood for.</b></p>
+        <select name="food" id ="food">
+          <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content">
+              <option value="Italian">Italian </option>
+              <option value="Latin/Hispanic">Latin/Hispanic</option>
+              <option value="American">American</option>
+              <option value="Asian">Asian</option>
+              <option value= "French">French</option>
+            </div>
+          </div>
+
+        </select>
+        <button onClick = "userInput(document.getElementById('price').value, document.getElementById('food').value)"> Enter </button>
+        <div id = "restaurant"> </div>
+
+
+            </html>
